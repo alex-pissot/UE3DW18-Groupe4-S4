@@ -1,0 +1,12 @@
+name: ue3dw18
+recipe: lamp
+config:
+  webroot: . 
+services:
+  phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - database
+proxy:
+  phpmyadmin:
+    - phpmyadmin.ue3dw18.lndo.site

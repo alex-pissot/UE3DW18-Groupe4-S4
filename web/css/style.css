@@ -34,13 +34,13 @@ body {
 }
 
 /* Mise en page des box liens */
-.row {
+.containerIndex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.col-md-4 {
+.boxIndex {
     flex: 1 45%;
     display: flex;
     flex-direction: column;

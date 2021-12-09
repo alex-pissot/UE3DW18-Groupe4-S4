@@ -13,16 +13,13 @@
 			    	<p>{{ link.desc }}</p>
 				</div>
 				<div class="link">
-			    	<a href="{{ link.url }}" title="" target="_blank">Open Website ></a>
+			    	<a class="btn-lien" href="{{ link.url }}" title="" target="_blank">Open Website ></a>
 				</div>
-
 				<div class="filter">
 					{% for tag in link.tags %}
-						
-							<a href="{{ path('tag', { 'id': tag.id }) }}" title="Filtrer">
-								{{ tag.title }},
-							</a>
-						
+						<a href="{{ path('tag', { 'id': tag.id }) }}" title="Filtrer">
+							{{ tag.title }},
+						</a>
 					{% endfor %}
 				</div>
 				<div class="author">

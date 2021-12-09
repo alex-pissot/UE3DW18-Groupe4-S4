@@ -33,7 +33,7 @@ body {
     padding-bottom: 10px;
 }
 
-/* Mise en page des liens */
+/* Mise en page des box liens */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +41,7 @@ body {
 }
 
 .col-md-4 {
-    flex: 1 40%;
+    flex: 1 45%;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -51,23 +51,62 @@ body {
 }
 
 .title{
-    flex: 3;
+    flex: 1;
 }
 
 .description{
-    flex: 3;
+    flex: 1;
 }
 
 .link{
-    flex: 3;
+    flex: 1;
     text-align: center;
 }
 
 .filter {
-    flex: 3;
+    flex: 1;
     flex-direction: row;
 }
 .author{
-    flex: 2;
+    flex: 1;
     text-align: right;
+}
+
+/* Bouton "Open Website" box liens */
+.btn-lien {
+    margin: 1rem 0rem;
+    background: #fff;
+    backface-visibility: hidden;
+    border-radius: .375rem;
+    border-style: solid;
+    border-width: .125rem;
+    box-sizing: border-box;
+    color: #212121;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular,Helvetica,sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    line-height: 1.3;
+    padding: .875rem 1.125rem;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn-lien:not(:disabled):hover {
+    transform: scale(1.15);
+    text-decoration:none
+}
+
+
+.btn-lien:focus {
+    outline: 0 solid transparent;
+    text-decoration:none
 }
